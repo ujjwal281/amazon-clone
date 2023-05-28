@@ -1,0 +1,28 @@
+.body_image{
+   width: 100%;
+   z-index :-1;
+   margin-bottom: -150px;
+   position: absolute;
+   
+}
+
+.firstContainer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr 4fr;
+
+}
+.firstgridBox{
+    padding: 10px 10px ;
+}
+
+.containerMain{
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr 4fr;
+   
+    top: 351px;
+
+}
+.secondLane{
+    display: flex;
+}

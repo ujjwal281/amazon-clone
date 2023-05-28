@@ -1,0 +1,13 @@
+.cardcolours{
+    border-radius: 31px;
+    font-size: 20px;
+    padding: 5px 91px;
+    border: 1px solid white;
+
+}
+.cardcolours:hover{
+    background-color: rgb(231, 63, 63);
+}
+.verify{
+    padding: 10px 10px;
+}

@@ -1,0 +1,38 @@
+.Header{
+    display: flex;
+    background-color: black;
+    color: aliceblue;
+    width: 100%;
+    position:fixed;
+}
+.Header2{
+    display: flex;
+    background-color: black;
+    color: aliceblue;
+    width: 100%;
+    z-index: 23;
+   
+}
+.headerBar{
+    margin: 15px 10px;
+    
+}
+.headerBar:hover{
+    border: 1px solid white;
+}
+.headerFirst{
+    font-size: 12px;
+   
+}
+.buttonSearch{
+    font-size: 30px;
+}
+
+.headerSecond{
+    font-size: 17px;
+  
+}
+.search{
+    height: 30px;
+    width: 802px;
+}
