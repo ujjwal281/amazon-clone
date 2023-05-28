@@ -12,12 +12,12 @@ const Header = () => {
                     <input className='buttonSearch' id="nav-search-submit-button" type="submit" class="nav-input nav-progressive-attribute" value="Go" tabindex="0"/>
                 </div>
 
+          <Link to="/" >
           <div className='headerBar'>
-          <Link to="/">
               <span className='headerFirst'>Hello</span>
               <span className='headerSecond'>Sign Up</span>
-              </Link>
           </div>
+              </Link>
           
                 <Link to="/ShoppingPage">
                 <div className='headerBar'>
@@ -26,25 +26,22 @@ const Header = () => {
                 </div>
           </Link>
 
+          <Link to="/Apishopping">
+                <div className='headerBar'>
+                    <span className='headerFirst'>More</span>
+                    <span className='headerSecond'>Shopping</span>
+                </div>
+          </Link>
+
+          <a href="/LoginPage"><div className='headerBar'>
+                    <span className='headerFirst'>Login</span>
+                    <span className='headerSecond'>&SignUp</span>
+                </div></a>
+
                 <div className='headerBar'>
                     <span className='headerFirst'>Your</span>
                     <span className='headerSecond'>Prime</span>
                 </div>
-
-                <a href="https://www.amazon.in/gp/cart/view.html?ref_=nav_cart" aria-label="0 items in cart" class="nav-a nav-a-2 nav-progressive-attribute" id="nav-cart">
-                 <div id="nav-cart-count-container">
-                   <span id="nav-cart-count" aria-hidden="true" class="nav-cart-count nav-cart-0 nav-progressive-attribute nav-progressive-content">0</span>
-                   <span class="nav-cart-icon nav-sprite"></span>
-                 </div>
-                 <div id="nav-cart-text-container" class=" nav-progressive-attribute">
-                   <span aria-hidden="true" class="nav-line-1">
-                   </span>
-                   <span aria-hidden="true" class="nav-line-2">
-                     Cart
-                       <span class="nav-icon nav-arrow"></span>
-                     </span>
-                   </div>
-                 </a>
             </div>
 
             <div className='Header2'>
@@ -68,6 +65,11 @@ const Header = () => {
                 <div className='headerBar'>
                     <span className='headerFirst'>Your</span>
                     <span className='headerSecond'>Prime</span>
+          </div>
+          
+          <div className='headerBar'>
+                    <span className='headerFirst'>Login</span>
+                    <span className='headerSecond'>SignUp</span>
                 </div>
       
         </div>

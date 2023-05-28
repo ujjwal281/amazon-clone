@@ -1,3 +1,42 @@
 .fullcard{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
     padding: 10px 10px;
+    background-color: white;
+    margin: 10px 30px;
+     
+    
+}
+
+.images{
+    max-height: 200px;
+
+}
+
+.buttonsize{
+    font-size: 10px;
+}
+
+.itemPrice{
+    display: flex;
+    font-size: 23px;
+}
+
+.tickbox{
+    font-size: 13px;
+
+}
+
+.moreInfo{
+    font-size: 13px;
+    color: blue;
+}
+.moreInfo:hover{
+    color: rgb(92, 92, 255);
+    text-decoration: underline;
+
+}
+
+.imageGround{
+    background-color: rgb(255, 255, 255);
 }

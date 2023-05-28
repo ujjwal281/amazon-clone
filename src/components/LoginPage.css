@@ -1,0 +1,62 @@
+.LoginPageBackground{
+  
+    justify-content: center;
+    align-items: center;
+    padding: 10px 590px;
+    font-weight: 600;
+    
+}
+.amazonlog{
+   
+    max-width: 111px;
+
+}
+.amazonlogoimage{
+    max-width: 110px;
+
+}
+.cardBox{
+    padding: 20px 20px;
+ 
+    background-color: white ;
+    border: 1px solid rgb(234, 234, 234);
+    border-radius: 22px;
+}
+
+.SignIpContent{
+    font-size: 40px;
+
+}
+.SignInButton{
+    font-weight: 900;
+    padding: 1px 151px;
+    background-color: rgb(255, 166, 0);
+}
+
+.emailtype{
+    display: flex;
+
+}
+
+.passwordtype{
+    display: flex;
+}
+
+.emailInput{
+    padding: 1px 88px;
+    border: 3px solid rgb(0, 0, 0);
+}
+
+.passwordInput{
+    padding: 1px 88px;
+    border: 3px solid rgb(0, 0, 0);
+    
+    
+}
+
+.createAccountButton{
+    padding: 1px 106px;
+    background-color: rgb(255, 166, 0);
+    font-weight: 900;
+    
+}

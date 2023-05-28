@@ -1,0 +1,22 @@
+#cardview{
+    margin: 20px 20px;
+}
+
+.card-title{
+    text-align: left;
+    font-size: 15px;
+}
+
+.card-title{
+    margin-bottom: 0px;
+}
+
+.aboutproduct{
+    padding: 0px 0px;
+
+}
+
+.imagestars{
+    width: 3px;
+    height: 3px;
+}

@@ -1,9 +1,10 @@
 .Header{
     display: flex;
     background-color: black;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     width: 100%;
     position:fixed;
+    z-index: 10;
 }
 .Header2{
     display: flex;
@@ -15,7 +16,10 @@
 }
 .headerBar{
     margin: 15px 10px;
-    
+    color: aqua;
+    text-decoration-line:underline;
+    font-size: 20px;
+   
 }
 .headerBar:hover{
     border: 1px solid white;

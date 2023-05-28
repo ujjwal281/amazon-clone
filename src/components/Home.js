@@ -1,10 +1,10 @@
 
 import React from 'react'
 import Card from './Card'
+import Header from './Header'
 import './Home.css'
 import ImageComp from './ImageComp'
 import Product from './Product'
-
 
 const Home = () => {
   let image1 = "https://m.media-amazon.com/images/I/51UHoxzInpL._AC_SY200_.jpg"
@@ -81,27 +81,82 @@ const Home = () => {
     name5:"See all offers"
   }
 
+  const imageHome0 = "https://m.media-amazon.com/images/I/61iV+-ws85L._SX3000_.jpg";
+  const imageHome1 = "https://m.media-amazon.com/images/I/61aURrton0L._SX3000_.jpg";
+  const imageHome2 = "https://images-eu.ssl-images-amazon.com/images/G/31/img23/Wireless/Samsung/SamsungM/M14/Sale-live-now/D77911710_IN_WLME_SamsungM_M145G_Launch_tallhero_3000x1200._CB590368077_.jpg";
+  const imageHome3 = "https://images-eu.ssl-images-amazon.com/images/G/31/prime/New_Benefits/Gaming/PG_3000x1200_apr._CB590572011_.jpg";
+  const imageHome4 = "https://images-eu.ssl-images-amazon.com/images/G/31/img23/Sports/April/Getfitdays/GW/Hero/Desktop/Graphic-5-3000X1200-citi._CB590410728_.jpg";
+  
+
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  
+  function showDivs(n){
+    var i;
+    var x = document.getElementsByClassName("body_image");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) { slideIndex = x.length - 1 }
+    
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    x[slideIndex-1].style.display = "block";  
+  }
+
   return (
     <div >
+      <Header/>
       <section>
-        <div  className='body_image'>
-        <img className='body_image' alt="Electronics under 1999" src="https://m.media-amazon.com/images/I/61aURrton0L._SX3000_.jpg" class="_cropped-image-link_style_fluidLandscapeImage__3eTVC _cropped-image-link_style_fluidImage__iJ3aE" data-a-hires="https://m.media-amazon.com/images/I/61aURrton0L._SX3000_.jpg" width={1550} />
-        </div>
-        <section>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-        </section>
-        
+        <div  className='body_images'>
+          <img className='body_image' src={imageHome0} alt="Electronics under 1999" width={1550} />
+          <img className='body_image' src={imageHome1} alt="Electronics under 1999" width={1550} />
+          <img className='body_image' src={imageHome2} alt="Electronics under 1999"  width={1550} />
+          <img className='body_image' src={imageHome3} alt="Electronics under 1999" width={1550} />
+          <img className='body_image' src={imageHome4} alt="Electronics under 1999" width={1550} />
+          
+          <button class="w3-button w3-black w3-display-left" onclick={plusDivs(-1)}>&#10094;</button>
+          <button class="w3-button w3-black w3-display-right" onclick={plusDivs(1)}>&#10095;</button>
+
+        </div>      
       </section>
+
+      <section className='information'>
+      <nav id='menu'>
+  <input type='checkbox' id='responsive-menu' onclick='updatemenu()'/><label></label>
+  <ul>
+    <li><a href='http://'>=All</a></li>
+    <li><a href='http://'>Fresh</a></li>
+    <li><a href='http://'>Amazon miniTV</a></li>
+    <li><a href='http://'>Amazon Pay</a></li>
+    <li><a href='http://'>Gift Cards</a></li>
+    <li><a href='http://'>GIft Ideas</a></li>
+    <li><a href='http://'>Health,Household & Personal Care</a></li>
+    <li><a href='http://'>AmazoBasics</a></li>
+    <li><a href='http://'>Books</a></li>
+    <li><a href='http://'>House Improvement</a></li>
+    <li><img className='imagenavbar' src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/X-site/SingleTitle/Multi-title-Drishyam2-RamSetu-Kantara-Farzi/400x39-SWM._CB612652932_.jpg" alt="" />
+    </li>
+  </ul>
+</nav>
+      </section>
+         
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+
         <section className='containerMain' >
+          
           <Product image0={obj1.name0} image1={obj1.name1} image2={obj1.name2} image3={obj1.name3} image4={obj1.name4}  image5 = {obj1.name5}/>
           <Product image0={obj2.name0} image1={obj2.name1} image2={obj2.name2} image3={obj2.name3} image4={obj2.name4}  image5 = {obj2.name5}/>
           <Product image0={obj3.name0} image1={obj3.name1} image2={obj3.name2} image3={obj3.name3} image4={obj3.name4}  image5 = {obj3.name5}/>
@@ -112,7 +167,7 @@ const Home = () => {
           <Product image0={obj7.name0} image1={obj7.name1} image2={obj7.name2} image3={obj7.name3} image4={obj7.name4}  image5 = {obj7.name5}/>         
       </section>
 
-      <section className="secondLane" >
+      <section className="secondLane">
         <ImageComp name={image1} /> 
         <ImageComp  name={image2}/> 
         <ImageComp  name={image3}/> 
@@ -124,7 +179,6 @@ const Home = () => {
         <ImageComp  name={image9}/> 
         <ImageComp  name={image10}/> 
       </section>
-
       </div>
   )
 }

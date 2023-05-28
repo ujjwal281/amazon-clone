@@ -2,12 +2,14 @@
     border-radius: 31px;
     font-size: 20px;
     padding: 5px 91px;
-    border: 1px solid white;
+    background-color:  rgb(253, 249, 7);
+    border: 1px solid rgb(253, 249, 7);
 
 }
 .cardcolours:hover{
-    background-color: rgb(231, 63, 63);
+    background-color: rgb(255, 237, 104);
 }
 .verify{
     padding: 10px 10px;
+    color: rgba(46, 228, 0, 0.47);
 }
